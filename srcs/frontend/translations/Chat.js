@@ -422,7 +422,7 @@ async function updateOnlineUsers() {
             linksContainer.appendChild(blockLink);
         
             const sendMessageBtn = document.createElement('button');
-            sendMessageBtn.innerHTML = '<i class="bi bi-envelope"></i> Send Message';
+            sendMessageBtn.innerHTML = '<i ></i> Send Message';
             sendMessageBtn.classList.add('btn', 'btn-primary', 'btn-sm');
             sendMessageBtn.addEventListener('click', (event) => {
                 event.stopPropagation();
@@ -433,10 +433,11 @@ async function updateOnlineUsers() {
             });
             linksContainer.appendChild(sendMessageBtn);
         
-            // Invite to Play link
+            // fr.json link
             const inviteToPlayLink = document.createElement('a');
             inviteToPlayLink.href = '#'; // Provide a proper link to handle sending an invitation
-            inviteToPlayLink.classList.add();
+            inviteToPlayLink.classList.add('btn', 'btn-warning', 'btn-sm', 'mr-1');
+            inviteToPlayLink.innerHTML = '<i class="bi bi-controller"></i> fr.json';
             inviteToPlayLink.addEventListener('click', async (event) => {
                 event.preventDefault();
                 wanttoplay = await translateKey('wanttoplay');

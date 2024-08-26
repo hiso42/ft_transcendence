@@ -36,7 +36,7 @@
 
 .pong-navbar {
   background-color: #212529 transparent;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Arial', cursive;
   display: flex;
   justify-content: space-between; 
   align-items: center; 
@@ -132,10 +132,7 @@
 
 .bn::before {
   content: "";
-  background: linear-gradient(
-    45deg,
-    #07d888, #e40851, #2f00ff, #00ff37,
-    #ec0808, #2600ff, #0bd157, #2f00ff
+  background: linear-gradient( red
   );
   position: absolute;
   top: -2px;

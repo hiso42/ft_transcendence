@@ -8,12 +8,6 @@ async function showGameModes() {
             associatedCards: ["#player3d1", "#playerai1", "#pongMultiplayer", "#tournament"] 
         },
         {
-            text: "Tic Tac Toe",
-            imgPlaceholder: './src/tictactoe.png',
-            href: "#tictactoe",
-            associatedCards: ["#tic1", "#tic2", "#tournament2"] 
-        },
-        {
             text: rps,
             imgPlaceholder: './src/rps.png',
             href: "#rps", 

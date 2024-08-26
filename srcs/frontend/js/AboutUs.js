@@ -2,44 +2,16 @@ function showAboutUsPage() {
   const cardsData = [
     {
       imgSrc: 'src/ddyankov.jpg',
-      imgAlt: 'ddyankov',
-      firstName: 'Deyan',
-      lastName: 'Dyankov',
-      githubLink: 'https://github.com/ddyankov28',
-      linkedinLink: 'https://www.linkedin.com/in/ddyankov23/'
+      imgAlt: 'xxx',
+      firstName: 'xxx',
+      lastName: 'aaaa',
     },
-    {
-      imgSrc: 'src/eelasam.jpg',
-      imgAlt: 'eelasam',
-      firstName: 'Ehab',
-      lastName: 'Elasam',
-      githubLink: 'https://github.com/EhabElasam',
-      linkedinLink: 'https://www.linkedin.com/in/ehab-elasam/'
-    },
-    {
-      imgSrc: 'src/huaydin.jpg',
-      imgAlt: 'huaydin',
-      firstName: 'Hüseyin Kaya',
-      lastName: 'Aydin',
-      githubLink: 'https://github.com/hu8813/',
-      linkedinLink: 'https://www.linkedin.com/in/huaydin/'
-    },    
-    {
-      imgSrc: 'src/vstockma.jpg',
-      imgAlt: 'vstockma',
-      firstName: 'Valentin',
-      lastName: 'Stockmayer',
-      githubLink: 'https://github.com/vstockma',
-      linkedinLink: 'https://www.linkedin.com/in/valentin-stockmayer-461b821a4/'
-    }
-
   ];
 
   const fragment = document.createDocumentFragment();
 
   cardsData.forEach(data => {
     const card = document.createElement('li');
-    card.classList.add('aucard', 'bn');
 
     const imgDiv = document.createElement('div');
     imgDiv.classList.add('img');
@@ -68,17 +40,12 @@ function showAboutUsPage() {
     iconDiv.classList.add('icon-container');
 
     const githubBtn = document.createElement('button');
-    githubBtn.classList.add('icon');
     const githubIcon = document.createElement('i');
-    githubIcon.classList.add('bi', 'bi-github');
-    githubBtn.appendChild(githubIcon);
     githubBtn.addEventListener('click', () => {
       window.open(data.githubLink, '_blank');
     });
-    iconDiv.appendChild(githubBtn);
 
     const linkedinBtn = document.createElement('button');
-    linkedinBtn.classList.add('icon');
     const linkedinIcon = document.createElement('i');
     linkedinIcon.classList.add('bi', 'bi-linkedin');
     linkedinBtn.appendChild(linkedinIcon);
